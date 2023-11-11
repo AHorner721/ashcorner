@@ -1,95 +1,71 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+      <header>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+          <h1>Hello! I'm Ashly Horner (aka Ash)</h1>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            I'm a web developer, video game player, and an anime enthusiast.
           </p>
-        </a>
-      </div>
+          <p>Welcome to my corner of the internet!</p>
+        </div>
+        <div>{/* TODO: Add Headshot */}</div>
+      </header>
+
+      <article>
+        <section>
+          <h2>My Background</h2>
+          <p>
+            I am currently employed as computer scientist, but my personal focus
+            is in frontend development.
+          </p>
+          <p>
+            I graduated from Jackson State University with my Bachelor's Degree
+            in Computer Science in 2021. Since then, I have worked as a
+            consultant with both commercial and government clients as a subject
+            matter expert in web development.
+          </p>
+          <p>
+            My favorite thing about this field is helping people solve problems
+            and delivering a better end user experience.
+          </p>
+          <button>Download my resume</button> <button>Get in touch</button>
+        </section>
+        <section>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>JavaScript / Node JS</li>
+            <li>React / Next JS</li>
+            <li>C# / ASP.Net Core</li>
+            <li>Python / Flask</li>
+            <li>PHP / WordPress</li>
+            <li>Certified Comptia Security+</li>
+            <li>AWS Certified Cloud Practicioner</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <section>
+          <h2>My Projects</h2>
+          <div>
+            <h3>Gus Campaign</h3>
+            <p>
+              A progressive web application (PWA) to support local political
+              campaign.
+            </p>
+          </div>
+          <div>
+            <h3>Pokedex</h3>
+            <p>
+              A dictionary application listing the type, height, weight and
+              description of Pokemon.
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
-  )
+  );
 }
