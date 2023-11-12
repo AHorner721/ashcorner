@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Ash's Corner",
-  description: "Portfolio and Blog site",
+  description: "Portfolio and Personal site",
 };
 
 //prettier-ignore
