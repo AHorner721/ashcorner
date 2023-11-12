@@ -1,5 +1,55 @@
+.body {
+  --primary-bg-color: #ededed;
+  --secondary-bg-color: #2b303a;
+  --primary-text-color: #2b303a;
+  --secondary-text-color: #ededed;
+}
+
 .main {
   font-size: 1.5rem;
   max-width: 80%;
   margin: 50px auto;
+}
+
+.ResumeBtn,
+.ContactBtn {
+  padding: 14px 16px;
+  outline: none;
+  border-radius: 25px;
+  background-color: #2b303a;
+  color: #ededed;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.ResumeBtn:hover {
+  background-color: #4b515c;
+}
+
+.ContactBtn {
+  background-color: transparent;
+  color: #2b303a;
+  border: #3d424d solid 1px;
+}
+
+.ContactBtn:hover {
+  background-color: #2b303a;
+  color: #ededed;
+}
+/* Get color theme, set css variables for colors */
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1420px) {
+  .intro {
+    max-width: 500px;
+  }
 }

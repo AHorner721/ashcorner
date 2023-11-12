@@ -1,17 +1,20 @@
 import styles from "./page.module.css";
+import ProfileImage from "../components/ProfileImage/ProfileImage";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <header>
-        <div>
+      <header className={styles.header}>
+        <ProfileImage />
+        <div className={styles.intro}>
           <h1>Hello! I'm Ashly Horner (aka Ash)</h1>
           <p>
             I'm a web developer, video game player, and an anime enthusiast.
           </p>
           <p>Welcome to my corner of the internet!</p>
+          <button className={styles.ResumeBtn}>Download my resume</button>{" "}
+          <button className={styles.ContactBtn}>Get in touch</button>
         </div>
-        <div>{/* TODO: Add Headshot */}</div>
       </header>
 
       <article>
@@ -22,7 +25,7 @@ export default function Home() {
             is in frontend development.
           </p>
           <p>
-            I graduated from Jackson State University with my Bachelor's Degree
+            I graduated from Jackson State University with my Bachelor's degree
             in Computer Science in 2021. Since then, I have worked as a
             consultant with both commercial and government clients as a subject
             matter expert in web development.
@@ -31,7 +34,6 @@ export default function Home() {
             My favorite thing about this field is helping people solve problems
             and delivering a better end user experience.
           </p>
-          <button>Download my resume</button> <button>Get in touch</button>
         </section>
         <section>
           <h3>Technical Skills</h3>
